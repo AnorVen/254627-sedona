@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="mobile-meny">
+        <div class="mobile-meny__icon">
+          <img alt="кнопка закрыть" src="http://placehold.it/150x100">
+        </div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+          <li class="mobile-menu__item"><a href="photo.html">Фото и видио</a></li>
+          <li class="mobile-menu__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="mobile-menu__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
+        </ul>
+      </div>
+      <div class="top-menu">
+        <div class="top-menu__wrap">
+          <div class="top-menu__logo">
+            <img alt="лого сайта" src="http://placehold.it/150x100">
+          </div>
+            <label for="top-menu__btn">
+              <input type="button" id="top-menu__btn" value="&#9776;">
+            </label>
+            <div class="top-menu__photo">
+            <img alt="окружающие горы" src="http://placehold.it/150x100">
+          </div>
+          </div>
+        </div>
+    </header>
+    <article  class="main-photo">
+      <h1 class="comtent-hidden">Самые лучшие фото Седоны</h1>
+      <section class="main-photo__inntro">
+        <h3 class="main-photo__h3">Фото и видео</h3>
+        <p class="main-photo__text">Не можете решиться на путешествие из-за курса?фотографии помогут вам забыть о политике и экономике</p>
+      </section>
+      <section class="main-photo__photo photo">
+        <section class="photo__item">
+          <figure class="photo__figure">
+            <p class="photo__img"><img alt="неродные просторы" src="http://placehold.it/150x100"></p>
+            <figcaption class="photo__figcaption">неродные просторы</figcaption>
+            <p class="photo__autor">Автор фото: <cite class="photo__cite">Борис</cite></p>
+          </figure>
+          <div class="photo__social">
+            <div class="wrap">
+              <a href="#">
+                <span class="icon">знак</span>
+                <span class="like">1350</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="photo__item">
+          <figure class="photo__figure">
+            <p class="photo__img"><img alt="местная растительность" src="http://placehold.it/150x100"></p>
+            <figcaption class="photo__figcaption">местная растительность</figcaption>
+            <p class="photo__autor">Автор фото: <cite class="photo__cite">Сергей</cite></p>
+          </figure>
+          <div class="photo__social">
+            <div class="wrap">
+              <a href="#">
+                <span class="icon">знак</span>
+                <span class="like">143</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="photo__item">
+          <figure class="photo__figure">
+            <p class="photo__img"><img alt="дорога на север" src="http://placehold.it/150x100"></p>
+            <figcaption class="photo__figcaption">Дорога на север</figcaption>
+            <p class="photo__autor">Автор фото: <cite class="photo__cite">Петр</cite></p>
+          </figure>
+          <div class="photo__social">
+            <div class="wrap">
+              <a href="#">
+                <span class="icon">знак</span>
+                <span class="like">96</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="photo__item">
+          <figure class="photo__figure">
+            <p class="photo__img"><img alt="мост дьявола" src="http://placehold.it/150x100"></p>
+            <figcaption class="photo__figcaption">Мост дьявола</figcaption>
+            <p class="photo__autor">Автор фото: <cite class="photo__cite">Антон</cite></p>
+          </figure>
+          <div class="photo__social">
+            <div class="wrap">
+              <a href="#">
+                <span class="icon">знак</span>
+                <span class="like">254</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="main-photo__vidio">
+        <h3 class="main-photo__h3">Все еще сомниваетесь?</h3>
+        <p class="main-photo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video id="movie" width="400" height="320" preload controls>
+        <source src="video/sedona.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video/sedona.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="video/sedona.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        </video>
+      </section>
+    </article>
+    <footer class="site-footer">
+      <div class="site-footer__wrap">
+        <div class="site-footer__hesh">
+          <p class="site-footer__text">#VISITSEDONA</p>
+        </div>
+        <div class="site-footer__social social-list">
+          <ul>
+            <li class="social-list__item"><a href="#">Твиттер</a></li>
+            <li class="social-list__item"><a href="#">Фейсбук</a></li>
+            <li class="social-list__item"><a href="#">ЮТУБ</a></li>
+          </ul>
+        </div>
+        <div class="copy">
+          <p class="copy__text>Разработано <img alt="лого академии" src="http://placehold.it/150x100"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
