@@ -1,0 +1,133 @@
+@import "normalize.less";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1200px)";
+
+body{
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-style: normal;
+  background-color: #FFF;
+
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix(){
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.wrap{  /* будет убрано */
+  width: 320px;
+  margin: 0 auto;
+  /*
+    @media @tablet-widths{
+    width: 640px;
+    }
+    @media @desktop-widths{
+    width: 960px;
+    }*/
+}
+.wrap() {
+  width: 320px;
+  margin: 0 auto;
+  /*
+    @media @tablet-widths{
+    width: 640px;
+    }
+    @media @desktop-widths{
+    width: 960px;
+    }*/
+}
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+/*header*/
+.site-header{
+  height: 670px;
+}
+
+.mobile-menu{
+  height: 224px;
+}
+.top-menu{
+  height: 446px;
+  }
+
+.mobile-menu__wrap{
+  position: relative;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+}
+.mobile-meny__icon{
+  fill: #000;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+.mobile-menu__item{
+  background-color: #81b3d2;
+  border-top: 1px solid #81acc7;
+  border-bottom: 1px solid #78a7c4;
+  min-height: 54px;
+  text-align: center;
+  vertical-align: middle;
+}
+.mobile-menu__list{
+  list-style-type: none;
+  magrin: 0;
+  padding: 0;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.mobile-menu__list:first-child{
+  border-top: none;
+  min-height: 55px;
+}
+.mobile-menu__list:last-child{
+  border-bottom: none;
+}
+/*top-menu*/
+.top-menu__wrap-wrap{
+  position: relative;
+  margen-bottom: -30px;
+}
+.top-menu__logo{
+  margin: 0 auto;
+  z-index:1;
+  position: relative;
+  text-align: center;
+}
+.top-menu__photo{
+  background: url('../img/back-mobile.png');
+  min-height: 400px;
+  position: relative;
+}
+.top-menu__btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block
+}
+

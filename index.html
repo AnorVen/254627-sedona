@@ -3,37 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
   	<header class="site-header">
   		<div class="mobile-meny">
-  			<div class="mobile-men y__icon">
-  				<img alt="кнопка закрыть" src="http://placehold.it/150x100">
-  			</div>
-	  		<ul class="mobile-menu__list">
-	  			<li class="mobile-menu__item"><a href="index.html">Главная</a></li>
-	  			<li class="mobile-menu__item"><a href="photo.html">Фото и видио</a></li>
-	  			<li class="mobile-menu__item"><a href="form.html">Форма отзыва</a></li>
-	  			<li class="mobile-menu__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
-	  		</ul>
-  		</div>
+        <div class="mobile-menu__wrap wrap">
+    			<div class="mobile-meny__icon">
+            <svg>img/icon-cross.svg</svg>
+    			</div>
+  	  		<ul class="mobile-menu__list">
+  	  			<li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+  	  			<li class="mobile-menu__item"><a href="photo.html">Фото и видио</a></li>
+  	  			<li class="mobile-menu__item"><a href="form.html">Форма отзыва</a></li>
+  	  			<li class="mobile-menu__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
+  	  		</ul>
+    		</div>
+      </div>
   		<div class="top-menu">
-  			<div class="top-menu__wrap">
-  				<div class="top-menu__logo">
-  					<img alt="лого сайта" src="http://placehold.it/150x100">
-  				</div>
-	  				<label for="top-menu__btn">
-	  					<input type="button" id="top-menu__btn" value="&#9776;">
-	  				</label>
-	  				<div class="top-menu__photo">
+  			<div class="top-menu__wrap wrap">
+          <div class="top-menu__wrap-wrap">
+            <label class="top-menu__btn" for="top-menu__btn">
+              <input type="button" id="top-menu__btn" value="&#9776;">
+            </label>
+  				  <div class="top-menu__logo">
+  					 <img alt="лого сайта" src="img/logo-sedona-mobile.svg">
+            </div>
+
+          </div>
+	  			<div class="top-menu__photo">
 						<img alt="окружающие горы" src="http://placehold.it/150x100">
 					</div>
   				</div>
   			</div>
   	</header>
   	<article  class="main">
-  	<h1 class="content-hidden"> Седона классная!Б</h1>
-			<div class="main__wrap">
+  	<h1 class="content-hidden"> Седона классная!</h1>
+			<div class="main__wrap wrap">
 				<section class="main__item intro">
 					<h2 class="main__h2">СЕДОНА — небольшой  городок в АРИЗОНЕ,  ЗАСЛУЖИвающий большего!</h2>
 					<p class="intro__text">Рассмотрим 5 причин, по которым седона круче чем гранд каньон</p>
@@ -113,7 +122,7 @@
 			</div>
 		</article>
   	<footer class="site-footer">
-  		<div class="site-footer__wrap">
+  		<div class="site-footer__wrap wrap">
   			<div class="site-footer__hesh">
   				<p class="site-footer__text">#VISITSEDONA</p>
   			</div>
