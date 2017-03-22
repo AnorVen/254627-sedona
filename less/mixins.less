@@ -1,0 +1,41 @@
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1200px)";
+
+.clearfix(){
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.wrap() {
+  width: 320px;
+  margin: 0 auto;
+   /*
+    @media @tablet-widths{
+    width: 640px;
+    }
+    @media @desktop-widths{
+    width: 960px;
+    }*/
+}
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+.wrap{  /* будет убрано */
+  width: 320px;
+  margin: 0 auto;
+  /*
+    @media @tablet-widths{
+    width: 640px;
+    }
+    @media @desktop-widths{
+    width: 960px;
+    }*/
+}
