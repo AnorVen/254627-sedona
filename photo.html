@@ -5,31 +5,27 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/jquery.formstyler.min.js"></script>
   </head>
   <body>
     <header class="site-header photo-header">
       <div class="mobile-menu">
         <div class="mobile-menu__wrap wrap">
-          <div class="mobile-menu__icon">
-            <!--<div class="mobile-menu__close"></div>-->
-          </div>
+          <button class="mobile-menu__btn" type="button" id="top-menu__btn"></button>
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
             <li class="mobile-menu__item"><a href="photo.html">Фото и видио</a></li>
-            <li class="mobile-menu__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="mobile-menu__item"><a href="feetback.html">Форма отзыва</a></li>
             <li class="mobile-menu__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
           </ul>
         </div>
       </div>
       <div class="top-menu">
         <div class="top-menu__wrap wrap">
-          <label class="top-menu__btn" for="top-menu__btn">
-            <input type="button" id="top-menu__btn" value="&#9776;">
-          </label>
+          <button class="top-menu__btn" type="button" id="top-menu__btn"></button>
           <div class="top-menu__logo">
-            <img alt="лого сайта" src="img/logo-sedona-mobile.svg">
+            <a href="index.html">
+              <img alt="лого сайта" src="./img/logo-sedona-mobile.svg">
+            </a>
           </div>
        </div>
        <div class="top-menu-fitback__intro wrap">
@@ -41,7 +37,7 @@
         </div>
       </div>
     </header>
-    <article  class="main-photo">
+    <main  class="main-photo">
       <h1 class="visually-hidden">Самые лучшие фото Седоны</h1>
       <div class="main-photo__wrap">
       <section class="main-photo__inntro">
@@ -51,7 +47,7 @@
       <section class="main-photo__photo photo">
         <section class="photo__item">
           <figure class="photo__figure">
-            <p class="photo__img"><img alt="неродные просторы" src="../img/photo-1-mobile@1x.jpg"></p>
+            <p class="photo__img"><img alt="неродные просторы" src="./img/photo-1-mobile@1x.jpg"></p>
             <figcaption class="photo__figcaption">неродные просторы</figcaption>
             <p class="photo__autor">Автор фото: <cite class="photo__cite">Борис</cite></p>
           </figure>
@@ -66,7 +62,7 @@
         </section>
         <section class="photo__item">
           <figure class="photo__figure">
-            <p class="photo__img"><img alt="местная растительность" src="../img/photo-2-mobile@1x.jpg"></p>
+            <p class="photo__img"><img alt="местная растительность" src="./img/photo-2-mobile@1x.jpg"></p>
             <figcaption class="photo__figcaption">местная растительность</figcaption>
             <p class="photo__autor">Автор фото: <cite class="photo__cite">Сергей</cite></p>
           </figure>
@@ -81,7 +77,7 @@
         </section>
         <section class="photo__item">
           <figure class="photo__figure">
-            <p class="photo__img"><img alt="дорога на север" src="../img/photo-3-mobile@1x.jpg"></p>
+            <p class="photo__img"><img alt="дорога на север" src="./img/photo-3-mobile@1x.jpg"></p>
             <figcaption class="photo__figcaption">Дорога на север</figcaption>
             <p class="photo__autor">Автор фото: <cite class="photo__cite">Петр</cite></p>
           </figure>
@@ -96,7 +92,7 @@
         </section>
         <section class="photo__item">
           <figure class="photo__figure">
-            <p class="photo__img"><img alt="мост дьявола" src="../img/photo-4-mobile@1x.jpg"></p>
+            <p class="photo__img"><img alt="мост дьявола" src="./img/photo-4-mobile@1x.jpg"></p>
             <figcaption class="photo__figcaption">Мост дьявола</figcaption>
             <p class="photo__autor">Автор фото: <cite class="photo__cite">Антон</cite></p>
           </figure>
@@ -113,7 +109,7 @@
       <section class="main-photo__vidio">
         <h3 class="main-photo__slogan">Все еще сомниваетесь?</h3>
         <p class="main-photo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="main-photo__pres" id="movie" width="320" height="200" poster="../img/video-mobile@1x.jpg" preload>
+        <video class="main-photo__pres" id="movie" width="320" height="200" poster="./img/video-mobile@1x.jpg" preload>
         <source src="video/sedona.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         <source src="video/sedona.webm" type='video/webm; codecs="vp8, vorbis"'>
         <source src="video/sedona.ogv" type='video/ogg; codecs="theora, vorbis"'>
@@ -121,7 +117,7 @@
         <div class="main-photo__pres-control"></div>
       </section>
       </div>
-    </article>
+    </main>
     <footer class="site-footer">
       <div class="site-footer__wrap wrap">
         <div class="site-footer__hesh">
@@ -135,7 +131,7 @@
           </ul>
         </div>
         <div class="copy">
-          <p class="copy__text">Разработано <img alt="лого академии" src="../img/htmlacademy.svg"></p>
+          <p class="copy__text">Разработано <img alt="лого академии" src="./img/htmlacademy.svg"></p>
         </div>
       </div>
     </footer>

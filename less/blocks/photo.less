@@ -1,0 +1,107 @@
+/*photo*/
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-photo__wrap{
+  width: 320px;
+  margin:0 auto;
+  padding: 0;
+}
+.main-photo__inntro{
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  .main-photo__slogan{
+    letter-spacing: 1.10px;
+  }
+  .main-photo__text{
+    padding: 5px;
+  }
+}
+.photo__item{
+  padding: 0 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  .photo__figure{
+    margin: 0;
+    .photo__img{
+      margin: 0;
+      img{
+        width: 280px;
+        height: 280px;
+      }
+    }
+    .photo__figcaption{
+      line-height: 24px;
+      font-weight: bold;
+      padding-top: 9px;
+    }
+    .photo__autor{
+      text-transform: none;
+      margin: 0;
+    }
+  }
+  .photo__social{
+    font-weight: bold;
+    a{
+      text-decoration: none;
+      color: black;
+
+      .icon{
+        display: inline-block;
+        background: #fff url(../img/icon-like.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 4px;
+      }
+      .like{
+        padding-left: 8px;
+      }
+    }
+  }
+}
+.main-photo__vidio{
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 66px;
+  .main-photo__slogan{
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding-top: 16px;
+  }
+  .main-photo__text{
+    padding: 0 20px;
+    padding-top: 28px;
+    margin: 0;
+  }
+  .main-photo__pres{
+    position: relative;
+    left: -20px;
+  }
+  .main-photo__pres-control{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    content: "";
+    background: url("../img/volume scale.svg") no-repeat;
+    width: 280px;
+    height: 111px;
+  }
+}
+
+
+/*/photo*/
