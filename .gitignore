@@ -4,8 +4,8 @@
 *.log
 *.pdf
 *.psd
-*.sublime*
-css/*.css
-node_modules/
-Thumbs.db
-*sedona/*
+*.sublime
+*css/*.css
+node_modules/Thumbs.db
+*/sedona/*
+build/*
