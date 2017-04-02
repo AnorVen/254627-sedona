@@ -73,11 +73,10 @@
   }
 }
 .main-photo__vidio{
-  position: relative;
   padding: 0 20px;
   text-align: center;
   padding-top: 18px;
-  padding-bottom: 66px;
+  margin-bottom: -13px;
   .main-photo__slogan{
     letter-spacing: 0.8px;
     margin: 0;
@@ -87,20 +86,71 @@
     padding: 0 20px;
     padding-top: 28px;
     margin: 0;
+    padding-bottom: 35px;
   }
   .main-photo__pres{
     position: relative;
     left: -20px;
   }
   .main-photo__pres-control{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: -52px;
     z-index: 2;
-    content: "";
-    /*background: url("../img/volume_scale.svg") no-repeat;*/
+    content: " ";
+    background: url("../img/value.png") no-repeat center/cover;
     width: 280px;
     height: 111px;
   }
+  .volume{
+    position: absolute;
+    top: 20px;
+    left: 59px;
+    fill: #ffffff;
+    &:hover{
+      fill: #000;
+    }
+    &:active{
+      fill: #5c6870;
+    }
+  }
+  .replay{
+    position: absolute;
+    bottom: 23px;
+    left: 25px;
+    fill: 5c6870;
+    &:hover{
+      fill: #353535;
+    }
+    &:active{
+      fill: #c1c1c1;
+    }
+  }
+  .subtitle{
+    position: absolute;
+    bottom: 23px;
+    right: 74px;
+    fill: 5c6870;
+    &:hover{
+      fill: #353535;
+    }
+    &:active{
+      fill: #c1c1c1;
+    }
+  }
+  .fullscreen{
+    position: absolute;
+    bottom: 23px;
+    right: 23px;
+    fill: 5c6870;
+    &:hover{
+      fill: #353535;
+    }
+    &:active{
+      fill: #c1c1c1;
+    }
+  }
+
+
 }
 
 

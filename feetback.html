@@ -100,14 +100,28 @@
         </div>
         <div class="main-fitback__item4">
           <h3 class="main-fitback__slogan">Посещенные достопримечательности:</h3>
-          <input type="checkbox" id="fit-chk-1" value="1" name="fit-chk-1"><label for="fit-chk-1">Мост
-          Дьявола</label><br>
-          <input type="checkbox" id="fit-chk-2" value="2" name="fit-chk-1"><label for="fit-chk-2">Слайд-парк</label><br>
-          <input type="checkbox" id="fit-chk-3" value="3" name="fit-chk-3"><label
-          for="fit-chk-3">Гора-Колокол</label><br>
-          <input type="checkbox" id="fit-chk-4" value="4" name="fit-chk-4"><label for="fit-chk-4">Красные
-          Скалы</label><br>
-
+          <label class="main-feedback__label">
+            <input class="main-feedback__input" type="checkbox" value="1" name="fit-chk-1">
+            <span class="main-feedback__square"></span>
+            <span class="main-feedback__title">Мост
+          Дьявола</span>
+          </label>
+          <label class="main-feedback__label">
+            <input class="main-feedback__input" type="checkbox" value="2" name="fit-chk-2">
+            <span class="main-feedback__square"></span>
+            <span class="main-feedback__title">Слайд-парк</span>
+          </label>
+          <label class="main-feedback__label">
+            <input class="main-feedback__input" type="checkbox" value="3" name="fit-chk-3">
+            <span class="main-feedback__square"></span>
+            <span class="main-feedback__title">Гора-Колоколь</span>
+          </label>
+          <label class="main-feedback__label">
+            <input class="main-feedback__input" type="checkbox" value="4" name="fit-chk-4">
+            <span class="main-feedback__square"></span>
+            <span class="main-feedback__title">Красные
+          Скалы</span>
+          </label>
         </div>
         <div class="main-fitback__item5">
           <h3 class="main-fitback__slogan">Опишите свои эмоции:</h3>
@@ -118,26 +132,66 @@
       </form>
     </section>
   </div>
+  <section class="pop-up pop-up--failure pop-up--close">
+    <section class="pop-up__wrap">
+    <h3 class="pop-up__slogan">Что-то пошло не так!</h3>
+    <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </section>
+    <div class="pop-up__btn--failure">
+    <button class="pop-up__btn " type="button">OK</button>
+    </div>
+  </section>
+  <section class="pop-up pop-up--success pop-up--close">
+    <section class="pop-up__wrap">
+    <h3 class="pop-up__slogan">Ваш отзыв отправлен!</h3>
+    <p class="pop-up__text">Спасибо за ваше участие,ваш отзыв уже поступил к нам.
+      в ближайшее время мы опубликуем его на сайте.</p>
+    </section>
+    <div class="pop-up__btn--success">
+    <button class="pop-up__btn" type="button">Закрыть окно</button></div>
+  </section>
+
+
 </main>
 <footer class="site-footer">
   <div class="site-footer__wrap wrap">
     <div class="site-footer__hesh">
       <p class="site-footer__text">#VISITSEDONA</p>
     </div>
-    <div class="site-footer__social social-list">
-      <ul>
-        <li class="social-list__item1"><a href="#"><img class="twitter"></img></a></li>
-        <li class="social-list__item2"><a href="#"><img class="facebook"></img></a></li>
-        <li class="social-list__item3"><a href="#"><img class="youtube"></img></a></li>
+    <div class="site-footer__social">
+      <ul class="social-list">
+        <li class="social-list__items"><a href="#">
+          <svg class="social-list__item social-list__item--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+  <g id="W6EeEF_1_">
+    <g>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+    </g>
+  </g>
+              </svg>
+        </a>
+        </li>
+        <li class="social-list__items"><a href="#">
+          <svg class="social-list__item social-list__item--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+              </svg>
+        </a></li>
+        <li class="social-list__items"><a href="#">
+          <svg class="social-list__item social-list__item--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+</svg>
+
+        </a></li>
       </ul>
     </div>
     <div class="copy">
-      <p class="copy__text">Разработано <img alt="лого академии" src="./img/htmlacademy.svg"></p>
+      <a href="#" class="copy__text">Разработано
+        <svg class="copy__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+        </svg>
+      </a>
     </div>
   </div>
 </footer>
-<script>
-
-</script>
 </body>
 </html>
