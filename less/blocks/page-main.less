@@ -1,4 +1,5 @@
 /* main */
+
 .visually-hidden{
   position: absolute;
   width: 1px;
@@ -18,23 +19,25 @@
   margin-bottom: -10px;
 }
 .main__slogan{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
-  padding: 25px 29px 0 29px;
+  padding: 27px 29px 0 29px;
+  letter-spacing: 1.15px;
 }
 .intro__text{
    padding: 15px 20px 0 20px;
+  line-height: 26px;
 }
 .pluse1{
   padding-top: 65px;
   padding-bottom: 19px;
-  background: #81b3d2 url('../img/bg-triangle.svg') no-repeat;
+  background: @blue url('../img/bg-triangle.svg') no-repeat;
   color: #e6eff5;
   padding-right: 25px;
   padding-left: 25px;
   .main__title{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
   }
@@ -52,52 +55,46 @@
   background-position: -100px 0px;
   background-size: cover;
 }
-.pluse1__add{
+.features__add{
   text-align: left;
   padding: 0 20px;
   padding-bottom: 45px;
-  .pluse1__add-img1{
-  fill: #bad5e6;
-  display: inline-block;
-  width: 40px;
-  height: 37px;
+  .features__add-icon{
+    display: inline-block;
+    width: 40px;
+    height: 37px;
+    position: relative;
+  }
+
+  .features__add-icon--house{
   background: url('../img/icon-house.svg');
   background-size: 40px 37px;
   position: relative;
   top: 26px;
   }
-  .pluse1__add-img2{
-  display: inline-block;
-  width: 40px;
-  height: 37px;
+  .features__add-icon--gift{
   background: url('../img/icon-gift.svg');
   background-size: 40px 37px;
   position: relative;
   top: 25px;
-  fill: #bad5e6;
   }
-  .pluse1__add-img3{
-  display: inline-block;
-  width: 40px;
-  height: 37px;
+  .features__add-icon--burger{
   background: url('../img/icon-burger.svg');
   background-size: 40px 37px;
-  position: relative;
   top: 35px;
-  fill: #bad5e6;
   }
 
 }
-.pluse1__add-slogan{
+.features__add-slogan{
   margin-top: -5px;
   padding-left: 50px;
-  .pluse1__add-title{
-  font-family: 'PT Sans Bold', sans-serif;
+  .features__add-title{
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
 
   }
-  .pluse1__add-text{
+  .features__add-text{
     margin-top:10px;
     margin-bottom: -10px;
     line-height: 22px;
@@ -107,13 +104,13 @@
 .pluse2{
   padding-top: 24px;
   padding-bottom: 20px;
-  background: #81b3d2;
+  background: @blue;
   color: #e6eff5;
   padding-right: 25px;
   padding-left: 25px;
 
   .main__title{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
   }
@@ -137,13 +134,13 @@
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-  background: #eeeeee;
+  background: @grey;
 }
 .pluse3__slogan{
   padding-top: 14px;
   padding-bottom: 14px;
  .main__title{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 5px;
@@ -160,7 +157,7 @@
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-  background: #eeeeee;
+  background: @grey;
 }
 .pluse4__slogan{
   padding-top: 10px;
@@ -168,7 +165,7 @@
   border-bottom: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
   .main__title{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 5px;
@@ -186,13 +183,13 @@
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-  background: #eeeeee;
+  background: @grey;
 }
 .pluse5__slogan{
   padding-top: 10px;
   padding-bottom: 15px;
   .main__title{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 5px;
@@ -216,7 +213,7 @@
   margin-bottom: -3px;
   }
   .main__title{
-  font-family: 'PT Sans Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 26px;
   padding-bottom: 0;
@@ -225,14 +222,14 @@
     margin-bottom: 40px;
   }
   .find{
-    background: #81b3d2;
-    magrin-bottom: 50px;
+    background: @blue;
+    margin-bottom: 50px;
     padding-top: 14px;
     padding-bottom: 15px;
     a{
       color: #fff;
       text-decoration: none;
-      font-family: 'PT Sans Bold', sans-serif;
+      font-family: 'PT Sans', sans-serif;
       font-size: 20px;
       }
     }

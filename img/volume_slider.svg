@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.063" height="9.06" viewBox="0 0 9.063 9.06">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #283645;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="9.063" height="9.06" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="volume_slider" data-name="volume slider" class="cls-1" cx="4.531" cy="4.53" r="4.531"/>
+</svg>
