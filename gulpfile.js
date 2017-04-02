@@ -11,13 +11,13 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var svgmin = require("gulp-svgmin")
 var server = require("browser-sync").create();
-var cleanCSS = require('gulp-clean-css');
+var cleanCSS = require ('gulp-clean-css');
 var gcmq = require('gulp-group-css-media-queries');
 var rename = require('gulp-rename');
-var run = require ("run-sequence");
+var run = require("run-sequence");
 var del = require("del");
 var svgmin = require("gulp-svgmin");
-
+var smartgrid = require('smart-grid');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -37,12 +37,6 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
-
-
-
-
-
 
 gulp.task('default', function () {
     gulp.src('src/style.css')
@@ -104,6 +98,47 @@ gulp.task("serve", function() {
   gulp.watch("*.html", ["html:update"]);
 });
 
-gulp.task("build", function(fn) {
- run("clean", "copy", "style", "images", "symbols", fn);
+gulp.task("build", function(fn){
+ run(
+ "clean",
+ "copy",
+ "style",
+ "images",
+ "symbols",
+ fn
+ );
 });
+
+
+
+/* It's principal settings in smart grid project */
+var settings = {
+    outputStyle: 'less', /* less || scss || sass || styl */
+    columns: 12, /* number of grid columns */
+    offset: "30px", /* gutter width px || % */
+    container: {
+        minWidth: '1200px', /* max-width оn very large screen */
+        fields: '30px' /* side fields */
+    },
+    breakPoints: {
+        lg: {
+            'width': '1200px', /* -> @media (max-width: 1100px) */
+            'fields': '30px' /* side fields */
+        },
+        sm: {
+            'width': '768px',
+            'fields': '15px'
+        },
+
+        /*
+        We can create any quantity of break points.
+
+        some_name: {
+            some_width: 'Npx',
+            some_offset: 'N(px|%)'
+        }
+        */
+    }
+};
+
+smartgrid('/', settings);
