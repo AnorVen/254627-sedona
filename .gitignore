@@ -8,4 +8,4 @@
 *css/*.css
 node_modules/Thumbs.db
 */sedona/*
-build/*
+build/
