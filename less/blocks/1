@@ -1,0 +1,58 @@
+.pluse1{
+  padding-top: 65px;
+  position: relative;
+
+
+  &:before{
+    content: " ";
+    background: @blue url('../img/bg-triangle.svg') no-repeat;
+    width:320px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+  .pluse2{
+    padding-top: 24px;
+
+  }
+  .features-main{
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background: @blue;
+    color: #e6eff5;
+
+
+  }
+}
+
+
+
+  .pluse3 {
+    .pluse3__slogan {
+      padding-top: 14px;
+      padding-bottom: 14px;
+
+    }
+  }
+  .pluse4 {
+
+    .pluse4__slogan {
+      padding-top: 10px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e6e6e6;
+      border-top: 1px solid #e6e6e6;
+
+    }
+  }
+  .pluse5 {
+
+    .pluse5__slogan {
+      padding-top: 10px;
+      padding-bottom: 15px;
+
+    }
+  }

@@ -3,6 +3,10 @@
 .top-menu__wrap {
   position: relative;
   background: #FFF;
+  @media @tablet-widths{
+    top: -56px;
+    margin-bottom: -83px;
+  }
 }
 
 .top-menu__logo {
@@ -16,6 +20,10 @@
     width: 102px;
     height: 83px;
     margin: 0 auto;
+    @media @desktop-widths{
+      width: 188px;
+      height: 96px;
+    }
   }
 
 }
@@ -31,6 +39,9 @@
   border: none;
   cursor: pointer;
   z-index: 4;
+  @media @tablet-widths{
+    display: none;
+  }
 }
 
 .top-menu__intro {
@@ -45,6 +56,16 @@
     bottom: 0;
     left: 0;
     background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center/cover;
+    @media @tablet-widths{
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center/cover;
+      height: 57px;
+      width: 768px;
+    }
+  }
+  @media @tablet-widths{
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    min-height: 520px;
+
   }
 }
 
@@ -54,6 +75,9 @@
   min-height: 389px;
   background-size: contain;
   margin: 0 20px;
+  @media @tablet-widths{
+    background:url('../img/text-sedona-index.svg') no-repeat 0 90px conter/center ;
+  }
 }
 
 /*/main*/

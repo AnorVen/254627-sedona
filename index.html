@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="site-header">
+  <!--  mobile-menu--close - добавляется JS для скрытия меню -->
   <nav class="mobile-menu">
     <div class="mobile-menu__wrap wrap">
         <button class="mobile-menu__btn" type="button" id="mobile-menu__btn"></button>
@@ -24,7 +25,13 @@
       <button class="top-menu__btn" type="button" id="top-menu__btn"></button>
       <div class="top-menu__logo">
         <a href="index.html">
-          <img alt="лого сайта" src="./img/logo-sedona-mobile.svg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+            <source media="(min-width: 320px)" srcset="./img/logo-sedona-mobile.svg">
+            <img alt="лого сайта" src="./img/logo-sedona-mobile.svg">
+          </picture>
+
         </a>
       </div>
     </div>

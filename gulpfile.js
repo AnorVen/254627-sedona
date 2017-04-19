@@ -16,7 +16,6 @@ var cleanCSS = require ('gulp-clean-css');
 var gcmq = require('gulp-group-css-media-queries');
 var run = require("run-sequence");
 var del = require("del");
-var smartgrid = require('smart-grid');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -33,7 +32,7 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(cleanCSS())
-    .pipe(minify())
+   // .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -46,12 +45,12 @@ gulp.task('default', function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src("./build/img/**/*.{png,jpg,gif}")
-  .pipe(imagemin([
-     imagemin.optipng({optimizationLevel: 3}),
-     imagemin.jpegtran({progressive: true})
-     ]))
-  .pipe(gulp.dest("./build/img"));
+  return gulp.src("build/img/**/*.{png,jpg,gif}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+]))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("copy", function() {
@@ -105,55 +104,11 @@ gulp.task("serve", function() {
 
 gulp.task("build", function(fn){
  run(
-  "smart-grid",
   "clean",
    "copy",
    "style",
-   "images",
    "symbols",
+   "images",
  fn
  );
 });
-
-gulp.task("smart-grid", function(){
-var smartgrid = require('smart-grid');
-
-/* It's principal settings in smart grid project */
-var settings = {
-    outputStyle: 'less', /* less || scss || sass || styl */
-    columns: 12, /* number of grid columns */
-    offset: "30px", /* gutter width px || % */
-    container: {
-        maxWidth: '1200px', /* max-width оn very large screen */
-        fields: '30px' /* side fields */
-    },
-    breakPoints: {
-        lg: {
-            'width': '1100px', /* -> @media (max-width: 1100px) */
-            'fields': '30px' /* side fields */
-        },
-        md: {
-            'width': '960px',
-            'fields': '15px'
-        },
-        sm: {
-            'width': '780px',
-            'fields': '15px'
-        },
-        xs: {
-            'width': '560px',
-            'fields': '15px'
-        }
-        /*
-        We can create any quantity of break points.
-
-        some_name: {
-            some_width: 'Npx',
-            some_offset: 'N(px|%)'
-        }
-        */
-    }
-};
-
-smartgrid('./less', settings);
-})
