@@ -49,8 +49,8 @@
 }
 
 .top-menu__intro {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center/cover;
-  .retina({ background: url(../img/bg-back-mobile@2x.jpg) no-repeat center/cover });
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+  .retina({ background: url(../img/bg-back-mobile@2x.jpg) no-repeat 50% 0% });
   min-height: 389px;
   position: relative;
 
@@ -83,12 +83,12 @@
       width: 768px;
     }
     @media @desktop-widths {
-      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
-      height: 57px;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center/cover;
+      height: 59px;
       width: 1210px;
       padding: 0;
-      margin-left: -1px;
-
+      left: -5px;
+      bottom: -2px;
     }
   }
   .top-menu__photo{
@@ -115,12 +115,24 @@ margin-top: 90px;
 /*/main*/
 
 /*fitback*/ /*top-menu*/
-.feetback-header {
-  .top-menu__photo{
-    position: relative;
-    top: -200px;
-    }
+.feetback-header{
+  .top-menu__logo{
 
+  }
+  .top-menu__intro--feetback{
+    min-height:160px;
+    background-position: 50% 100%;
+    @media @tablet-widths{
+      min-height: 290px;
+    }
+    }
+  .top-menu__photo-text{
+
+  margin-top: 0;
+    @media @tablet-widths{
+      margin-top: -55px;
+    }
+  }
   }
 
 

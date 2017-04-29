@@ -35,7 +35,7 @@
         </a>
       </div>
     </div>
-    <div class="top-menu__intro wrap">
+    <div class=" wrap top-menu__intro--feetback top-menu__intro">
       <div class="top-menu__photo">
         <svg class="top-menu__photo-text" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
   <g>
@@ -53,37 +53,35 @@
 
 </header>
 <main class="main-fitback wrap">
-  <!--<div class="main-fitback__intro wrap">
-    <div class="intro__photo">
-      <div class="intro__photo-text">
-        <div class="inrto__photo-sedona"></div>
-      </div>
-    </div>
-  </div>-->
+
   <h1 class="visually-hidden">Отзывы про Седону</h1>
-  <div class="main-fitback__wrap">
-    <section class="main-fitback__intro">
-      <h3 class="main-fitback__slogan">Оставьте свой отзыв</h3>
-      <p class="main-fitback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-        достопримечателььнастях</p>
+  <div class="main-feetback__wrap">
+    <section class="main-feetback__intro">
+      <h3 class="main-feetback__slogan">Оставьте свой отзыв</h3>
+      <p class="main-feetback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </section>
     <section class="main-fitback__form">
       <form action="https://echo.htmlacademy.ru/" method="GET">
-        <div class="main-fitback__item1">
+        <div class="main-feetback__list">
+        <div class="main-fitback__item main-fitback__item1">
           <h3 class="main-fitback__slogan">Представьтесь:</h3>
-          <div class="main-fitback__input"><label for="name">Имя*:</label><input type="name" name="name" id="name"
-                                                                                 required placeholder="Петр">
+          <div class="main-fitback__input"><label for="name">Имя*:</label>
+            <input type="name" name="name" id="name"
+                   required placeholder="Петр">
           </div>
-          <div class="main-fitback__input"><label for="lastname">Фамилия*:</label><input type=name name="lastname"
-                                                                                         id="lastname" required
-                                                                                         placeholder="Иванов">
+          <div class="main-fitback__input"><label for="lastname">Фамилия*:</label>
+            <input type=name name="lastname"
+                   id="lastname" required
+                   placeholder="Иванов">
           </div>
-          <div class="main-fitback__input"><label for="midlename">Отчество:</label><input type=name name="midlename"
-                                                                                          id="midlename"
-                                                                                          placeholder="Александрович">
+          <div class="main-fitback__input"><label for="midlename">Отчество:</label>
+            <input type=name name="midlename"
+                   id="midlename"
+                   placeholder="Александрович">
           </div>
         </div>
-        <div class="main-fitback__item2">
+        <div class="main-fitback__item main-fitback__item2">
           <h3 class="main-fitback__slogan">Контактная информация:</h3>
           <div class="main-fitback__input">
             <label for="phone">Контактный телефон*:</label><input class="phone" type=phone name="phone" id="phone"
@@ -93,7 +91,7 @@
             <label for="email">Элктронная почта*:</label><input class="email" type=email name="email" id="email"
                                                                 required placeholder="Введите e-mail"></div>
         </div>
-        <div class="main-fitback__item3">
+        <div class="main-fitback__item main-fitback__item3">
           <h3 class="main-fitback__slogan">Ваше общее впечатление:</h3>
           <div class="main-feedback__fieldset">
             <label class="main-feedback__label">
@@ -113,7 +111,7 @@
             </label>
           </div>
         </div>
-        <div class="main-fitback__item4">
+        <div class="main-fitback__item main-fitback__item4">
           <h3 class="main-fitback__slogan">Посещенные достопримечательности:</h3>
           <label class="main-feedback__label">
             <input class="main-feedback__input" type="checkbox" value="1" name="fit-chk-1">
@@ -138,32 +136,38 @@
           Скалы</span>
           </label>
         </div>
-        <div class="main-fitback__item5">
+        <div class="main-fitback__item main-fitback__item5">
           <h3 class="main-fitback__slogan">Опишите свои эмоции:</h3>
           <textarea class="main-fitback__textarea" placeholder="Опишите подробно все свои восторги"
                     name="teatarea"></textarea>
         </div>
+        <div class="main-feetback__submit">
         <input class="end-fitback" type="submit" value="Отправить отзыв">
+          <p class="main-feeetback-hint">* - обязательные поля</p>
+        </div>
+
+        </div>
       </form>
     </section>
   </div>
   <section class="pop-up pop-up--failure pop-up--close">
     <section class="pop-up__wrap">
-    <h3 class="pop-up__slogan">Что-то пошло не так!</h3>
-    <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <h3 class="pop-up__slogan">Что-то пошло не так!</h3>
+      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </section>
     <div class="pop-up__btn--failure">
-    <button class="pop-up__btn " type="button">OK</button>
+      <button class="pop-up__btn " type="button">OK</button>
     </div>
   </section>
   <section class="pop-up pop-up--success pop-up--close">
     <section class="pop-up__wrap">
-    <h3 class="pop-up__slogan">Ваш отзыв отправлен!</h3>
-    <p class="pop-up__text">Спасибо за ваше участие,ваш отзыв уже поступил к нам.
-      в ближайшее время мы опубликуем его на сайте.</p>
+      <h3 class="pop-up__slogan">Ваш отзыв отправлен!</h3>
+      <p class="pop-up__text">Спасибо за ваше участие,ваш отзыв уже поступил к нам.
+        в ближайшее время мы опубликуем его на сайте.</p>
     </section>
     <div class="pop-up__btn--success">
-    <button class="pop-up__btn" type="button">Закрыть окно</button></div>
+      <button class="pop-up__btn" type="button">Закрыть окно</button>
+    </div>
   </section>
 
 
