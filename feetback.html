@@ -52,7 +52,7 @@
   </div>
 
 </header>
-<main class="main-fitback wrap">
+<main class="main-feetback wrap">
 
   <h1 class="visually-hidden">Отзывы про Седону</h1>
   <div class="main-feetback__wrap">
@@ -61,90 +61,103 @@
       <p class="main-feetback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
-    <section class="main-fitback__form">
+    <section class="main-feetback__form">
       <form action="https://echo.htmlacademy.ru/" method="GET">
         <div class="main-feetback__list">
-        <div class="main-fitback__item main-fitback__item1">
-          <h3 class="main-fitback__slogan">Представьтесь:</h3>
-          <div class="main-fitback__input"><label for="name">Имя*:</label>
-            <input type="name" name="name" id="name"
-                   required placeholder="Петр">
+          <div class="main-feetback__item main-feetback__item--1">
+            <h3 class="main-feetback__slogan">Представьтесь:</h3>
+            <div class="main-feetback__input"><label for="name">Имя*:</label>
+              <input type="name" name="name" id="name"
+                     required placeholder="Петр">
+            </div>
+            <div class="main-feetback__input"><label for="lastname">Фамилия*:</label>
+              <input type=name name="lastname"
+                     id="lastname" required
+                     placeholder="Иванов">
+            </div>
+            <div class="main-feetback__input"><label for="midlename">Отчество:</label>
+              <input type=name name="midlename"
+                     id="midlename"
+                     placeholder="Александрович">
+            </div>
           </div>
-          <div class="main-fitback__input"><label for="lastname">Фамилия*:</label>
-            <input type=name name="lastname"
-                   id="lastname" required
-                   placeholder="Иванов">
+          <div class="main-feetback__item main-feetback__item--2">
+            <h3 class="main-feetback__slogan">Контактная информация:</h3>
+            <div class="main-feetback__input">
+              <label for="phone"><span class="phone__none">Контактный</span> телефон*:</label>
+              <input class="phone" type=phone name="phone" id="phone" placeholder="Введите телефон" required>
+              <svg class="phone_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+              <image width="58" height="58" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAAAAADE0BX0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxoQEzrSDZT8AAAAKElEQVRIx+3LMREAAAgEILV/TnPY4UcPdnorNfFUVVVVVVVVVVV9Vw8XGQFaP6OyxQAAAABJRU5ErkJggg=="/>
+              <image id="phone.svg" x="21" y="20" width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxoQEzrSDZT8AAAAnklEQVQoz43RQRHCMBCF4f+hIBIqIQ5AQqWAA5wUlFRC6qCDgsbBcihk0tKdsLns4Zu3yQYtss+541UhptEzJ/6pKmnx0Vix6I2bSp/JXlL/HeblrGxukRPwBELrfUGzTKnF1nsNLTbsmTp1pS9NIgIPbpZBkZHAxMSrWoyCkkympKhYfbvJjobaluwQqNe8BQcIFHT9gd5SOBO5AJDf4CleqqhfV/UAAAAASUVORK5CYII="/>
+            </svg>
+              <p class="phone-error">Ошибка, перепроверьте номер</p>
+            </div>
+
+            <div class="main-feetback__input">
+              <label for="email">Элктронная почта*:</label>
+              <input class="email" type=email name="email" id="email"  placeholder="Введите e-mail" required>
+              <svg class="email_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+              <image id="mail.svg" width="58" height="58" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAAAAADE0BX0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxoQIjD0hXpQAAAAoUlEQVRIx2N8xkAuYCJb56jWUa2jWke1DjetLFhFNT6hcPluEG/rJ7xcvFrXWCHzrNZgVcSIo/Q/1ncMprHICrsS7Laar7RaM0+WgYGBQXbeGquV5iTYKsUgWxTOsLKPoSicYWXfY4ZnpGhlYJBt9GBgYNhR/5iBgVStDAxWKQxzID4mWSsCYFU0mNIwH14uXr8OjINHtY5qHdU6qnXIagUAl2EiiC9FQ/sAAAAASUVORK5CYII="/>
+            </svg>
+
+            </div>
           </div>
-          <div class="main-fitback__input"><label for="midlename">Отчество:</label>
-            <input type=name name="midlename"
-                   id="midlename"
-                   placeholder="Александрович">
+          <div class="main-feetback__item main-feetback__item--3">
+            <h3 class="main-feetback__slogan">Ваше общее впечатление:</h3>
+            <div class="main-feedback__fieldset">
+              <label class="main-feedback__label">
+                <input class="main-feedback__input" type="radio" value="1" name="feedback">
+                <span class="main-feedback__circle"></span>
+                <span class="main-feedback__title">Скорее положительное</span>
+              </label>
+              <label class="main-feedback__label">
+                <input class="main-feedback__input" type="radio" value="2" name="feedback">
+                <span class="main-feedback__circle"></span>
+                <span class="main-feedback__title">Скорее отрицательное</span>
+              </label>
+              <label class="main-feedback__label">
+                <input class="main-feedback__input" type="radio" value="3" name="feedback">
+                <span class="main-feedback__circle"></span>
+                <span class="main-feedback__title">Затрудняюсь ответить</span>
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="main-fitback__item main-fitback__item2">
-          <h3 class="main-fitback__slogan">Контактная информация:</h3>
-          <div class="main-fitback__input">
-            <label for="phone">Контактный телефон*:</label><input class="phone" type=phone name="phone" id="phone"
-                                                                  required placeholder="Введите телефон"></div>
-          <div class="phone-error">Ошибка, перепроверьте номер</div>
-          <div class="main-fitback__input">
-            <label for="email">Элктронная почта*:</label><input class="email" type=email name="email" id="email"
-                                                                required placeholder="Введите e-mail"></div>
-        </div>
-        <div class="main-fitback__item main-fitback__item3">
-          <h3 class="main-fitback__slogan">Ваше общее впечатление:</h3>
-          <div class="main-feedback__fieldset">
+          <div class="main-feetback__item main-feetback__item--4">
+            <h3 class="main-feetback__slogan">Посещенные достопримечательности:</h3>
+            <div class="checkbox-list">
             <label class="main-feedback__label">
-              <input class="main-feedback__input" type="radio" value="1" name="feedback">
-              <span class="main-feedback__circle"></span>
-              <span class="main-feedback__title">Скорее положительное</span>
-            </label>
-            <label class="main-feedback__label">
-              <input class="main-feedback__input" type="radio" value="2" name="feedback">
-              <span class="main-feedback__circle"></span>
-              <span class="main-feedback__title">Скорее отрицательное</span>
-            </label>
-            <label class="main-feedback__label">
-              <input class="main-feedback__input" type="radio" value="3" name="feedback">
-              <span class="main-feedback__circle"></span>
-              <span class="main-feedback__title">Затрудняюсь ответить</span>
-            </label>
-          </div>
-        </div>
-        <div class="main-fitback__item main-fitback__item4">
-          <h3 class="main-fitback__slogan">Посещенные достопримечательности:</h3>
-          <label class="main-feedback__label">
-            <input class="main-feedback__input" type="checkbox" value="1" name="fit-chk-1">
-            <span class="main-feedback__square"></span>
-            <span class="main-feedback__title">Мост
+              <input class="main-feedback__input" type="checkbox" value="1" name="fit-chk-1">
+              <span class="main-feedback__square"></span>
+              <span class="main-feedback__title">Мост
           Дьявола</span>
-          </label>
-          <label class="main-feedback__label">
-            <input class="main-feedback__input" type="checkbox" value="2" name="fit-chk-2">
-            <span class="main-feedback__square"></span>
-            <span class="main-feedback__title">Слайд-парк</span>
-          </label>
-          <label class="main-feedback__label">
-            <input class="main-feedback__input" type="checkbox" value="3" name="fit-chk-3">
-            <span class="main-feedback__square"></span>
-            <span class="main-feedback__title">Гора-Колоколь</span>
-          </label>
-          <label class="main-feedback__label">
-            <input class="main-feedback__input" type="checkbox" value="4" name="fit-chk-4">
-            <span class="main-feedback__square"></span>
-            <span class="main-feedback__title">Красные
+            </label>
+            <label class="main-feedback__label">
+              <input class="main-feedback__input" type="checkbox" value="2" name="fit-chk-2">
+              <span class="main-feedback__square"></span>
+              <span class="main-feedback__title">Слайд-парк</span>
+            </label>
+            <label class="main-feedback__label">
+              <input class="main-feedback__input" type="checkbox" value="3" name="fit-chk-3">
+              <span class="main-feedback__square"></span>
+              <span class="main-feedback__title">Гора-Колоколь</span>
+            </label>
+            <label class="main-feedback__label">
+              <input class="main-feedback__input" type="checkbox" value="4" name="fit-chk-4">
+              <span class="main-feedback__square"></span>
+              <span class="main-feedback__title">Красные
           Скалы</span>
-          </label>
-        </div>
-        <div class="main-fitback__item main-fitback__item5">
-          <h3 class="main-fitback__slogan">Опишите свои эмоции:</h3>
-          <textarea class="main-fitback__textarea" placeholder="Опишите подробно все свои восторги"
-                    name="teatarea"></textarea>
-        </div>
-        <div class="main-feetback__submit">
-        <input class="end-fitback" type="submit" value="Отправить отзыв">
-          <p class="main-feeetback-hint">* - обязательные поля</p>
-        </div>
+            </label>
+            </div>
+          </div>
+          <div class="main-feetback__item main-feetback__item--5">
+            <h3 class="main-feetback__slogan">Опишите свои эмоции:</h3>
+            <textarea class="main-feetback__textarea" placeholder="Опишите подробно все свои восторги"
+                      name="teatarea"></textarea>
+          </div>
+          <div class="main-feetback__item main-feetback__submit">
+            <input class="end-feetback" type="submit" value="Отправить отзыв">
+            <p class="main-feetback-hint">* - обязательные поля</p>
+          </div>
 
         </div>
       </form>

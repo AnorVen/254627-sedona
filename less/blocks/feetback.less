@@ -1,6 +1,6 @@
-/* fitback*/
+/* feetback*/
 
-.main-fitback__wrap {
+.main-feetback__wrap {
 
 }
 
@@ -10,6 +10,9 @@
   padding-top: 20px;
   padding-bottom: 4px;
   border-bottom: 1px solid #f6f6f6;
+  @media @tablet-widths {
+    border-bottom: none;
+  }
   .main-feetback__slogan {
     @media @tablet-widths {
       font-size: 30px;
@@ -26,108 +29,226 @@
   }
 }
 
+.main-feetback__item {
+  .main-feetback__slogan {
+    text-align: center;
+    letter-spacing: 1.15px;
+    @media @tablet-widths {
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
 .main-feetback__list {
   @media @tablet-widths {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
-}
 
-.main-fitback__item1 {
-  padding: 0 20px;
-  border-bottom: 1px solid #f6f6f6;
-  @media @tablet-widths {
-  order: 2;
-  width: 50%;
-    box-sizing: border-box;
+  .main-feetback__item--1 {
+    padding: 0 20px;
+    border-bottom: 1px solid #f6f6f6;
+
+    @media @tablet-widths {
+      order: 2;
+      width: 50%;
+      box-sizing: border-box;
+      border-left: 1px solid #dbdbdb;
+      margin-top: 20px;
+      margin-bottom: 85px;
+      border-bottom: none;
+      padding: 0 60px;
+      @media @desktop-widths {
+        padding-left: 80px;
+        padding-right: 120px;
+      }
+    }
+    .main-feetback__slogan {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @media @tablet-widths {
+        margin-top: 0;
+      }
+
+    }
+    .main-feetback__input {
+      display: flex;
+      min-width: 0;
+      padding-bottom: 20px;
+      overflow: hidden;
+      @media @tablet-widths {
+        padding-bottom: 0;
+        padding-top: 20px;
+        @media @desktop-widths {
+          font-size: 14px;
+        }
+      }
+
+      label {
+        padding-top: 20px;
+      }
+      input {
+        background-color: #f2f2f2;
+        border: none;
+        margin-left: 17px;
+        height: 58px;
+        flex-grow: 100;
+        padding-left: 21px;
+        font-size: 18px;
+        letter-spacing: 1.15px;
+      }
+    }
   }
-  .main-fitback__slogan {
-text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;
-letter-spacing: 1.15px;
-
-} .main-fitback__input {
-display: flex;
-min-width: 0px;
-padding-bottom: 20px;
-} label {
-padding-top: 20px;
-} input {
-background-color: #f2f2f2;
-border: none;
-margin-left: 17px;
-height: 58px;
-flex-grow: 100;
-padding-left: 21px;
-}
 }
 
-.main-fitback__item2 {
+.main-feetback__item--2 {
   padding: 0 20px;
   border-bottom: 1px solid #f6f6f6;
   padding-bottom: 25px;
-  @media @tablet-widths{
+  @media @tablet-widths {
     order: 3;
     width: 100%;
+    border-bottom: none;
+    border-top: 1px solid #dbdbdb;
+    padding: 0;
+    margin: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
   }
-  .main-fitback__slogan {
-    text-align: center;
+  @media @desktop-widths {
+    margin-right: 120px;
+    margin-left: 120px;
+    flex-direction: row;
+  }
+  .main-feetback__slogan {
     margin-top: 20px;
     margin-bottom: 20px;
-    letter-spacing: 1.15px;
+    @media @tablet-widths {
+      margin-top: 0;
+      text-align: center;
+      position: relative;
+      top: -13px;
+      background-color: #ffffff;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media @desktop-widths{
+      margin-left: 280px;
+      margin-right: 280px;
+    }
   }
-  .main-fitback__input {
+  .main-feetback__input {
     display: flex;
     flex-wrap: wrap;
     min-width: 0;
     padding-bottom: 3px;
-
-  }
-  label {
-    padding-top: 3px;
-    margin-left: 22px;
-    padding-bottom: 8px;
-  }
-  input {
-    background: #f2f2f2;
-    border: none;
-    height: 56px;
-    flex-grow: 100;
-    padding-left: 21px;
-    &.phone {
-      background: #f2f2f2 url(../img/icon-phone.svg) no-repeat;
-      background-size: 58px 58px;
+    @media @tablet-widths {
+      width: 100%;
+      position: relative;
     }
-    &.mail {
-      background: #f2f2f2 url(../img/icon-mail.svg) no-repeat;
-      background-size: 58px 58px;
-
+    @media @desktop-widths {
+      width: 480px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 30px;
     }
-  }
-  .phone-error {
-    margin-left: 22px;
-    text-transform: none;
-    color: red;
-    padding-bottom: 10px;
+
+    label {
+      padding-top: 3px;
+      margin-left: 22px;
+      padding-bottom: 8px;
+      @media @desktop-widths{
+        margin-left: 0;
+      }
+    }
+    .phone, .email {
+      position: relative;
+      background: #f2f2f2;
+      border: none;
+      height: 56px;
+      flex-grow: 100;
+      padding-left: 21px;
+      @media @tablet-widths {
+        width: calc(648px - 80px);
+      }
+      @media @desktop-widths{
+        width: 257px;
+        flex-grow: 0;
+        margin-left: 16px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+      }
+    }
+    .phone_icon {
+      height: 58px;
+      width: 58px;
+    }
+    .email_icon {
+      height: 58px;
+      width: 58px;
+    }
+    .phone__none {
+      @media @desktop-widths {
+        display: none;
+      }
+    }
+    .phone-error {
+      margin-left: 22px;
+      text-transform: none;
+      color: red;
+      padding-bottom: 10px;
+      @media @tablet-widths {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+      }
+      @media @desktop-widths{
+        top: 0;
+        right: 40%;
+      }
+    }
   }
 }
 
-.main-fitback__item3 {
+.main-feetback__item--3 {
   padding: 0 20px;
   border-bottom: 1px solid #f6f6f6;
   min-height: 273px;
-  @media @tablet-widths{
+  @media @tablet-widths {
     order: -2;
-    width: 50%;
+    padding: 0;
+    padding-left: 60px;
+    width: calc(50% - 1px);
     box-sizing: border-box;
+    border-bottom: none;
+    margin-top: 20px;
+    @media @desktop-widths {
+      padding-left: 120px;
+    }
+
   }
 
-  .main-fitback__slogan {
+  .main-feetback__slogan {
     padding-top: 3px;
-    letter-spacing: 1.15px;
     padding-left: 21px;
+    @media @tablet-widths {
+      padding: 0;
+      margin-bottom: 51px;
+      @media @desktop-widths {
+        padding-left: 80px;
+      }
+    }
   }
 
   .main-feedback__label {
@@ -135,6 +256,13 @@ padding-left: 21px;
     align-items: center;
     padding-top: 7px;
     padding-bottom: 7px;
+    @media @tablet-widths {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      @media @desktop-widths {
+        padding-left: 5px;
+      }
+    }
   }
 
   .main-feedback__input {
@@ -154,6 +282,9 @@ padding-left: 21px;
     height: 56px;
     background-color: #ebebeb;
     border-radius: 50%;
+    @media @tablet-widths {
+      margin-right: 20px;
+    }
 
     &:before {
       content: "";
@@ -166,26 +297,65 @@ padding-left: 21px;
   }
 }
 
-.main-fitback__item4 {
+.main-feetback__item--4 {
   padding: 0 20px;
   border-bottom: 1px solid #f6f6f6;
   margin-bottom: 2px;
-  @media @tablet-widths{
+  @media @tablet-widths {
+    margin: 0 60px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     order: 4;
+    border-bottom: none;
+    border-top: 1px solid #dbdbdb;
+    margin-bottom: 80px;
+    padding: 0;
 
   }
-  .main-fitback__slogan {
-    text-align: center;
-    letter-spacing: 1.15px;
+  @media @desktop-widths {
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+  .main-feetback__slogan {
+    @media @tablet-widths {
+      margin-top: 0;
+      text-align: center;
+      position: relative;
+      top: -26px;
+      background-color: #ffffff;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 27px;
+    }
+
+  }
+  .checkbox-list {
+    @media @tablet-widths {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
   }
   .main-feedback__label {
     display: flex;
     align-items: center;
     padding-top: 7px;
     padding-bottom: 7px;
+    @media @tablet-widths {
+      width: 260px;
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+    }
+    @media @desktop-widths {
+      width: calc(25% - 1px);
+    }
   }
 
   .main-feedback__input {
@@ -206,6 +376,9 @@ padding-left: 21px;
     height: 56px;
     background-color: #f2f2f2;
     border-radius: 3px;
+    @media @tablet-widths {
+      margin-right: 24px;
+    }
     &:hover {
       background-color: #e5e5e5;
     }
@@ -224,46 +397,86 @@ padding-left: 21px;
   }
 }
 
-.main-fitback__item5 {
+.main-feetback__item--5 {
   margin-top: 20px;
   padding: 0 20px;
-  @media @tablet-widths{
+  @media @tablet-widths {
     order: 5;
     width: 100%;
-
+    margin-top: 0;
+    border-top: 1px solid #dbdbdb;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
   }
-  .main-fitback__slogan {
-    text-align: center;
-    letter-spacing: 1.15px;
+  @media @desktop-widths {
+    margin-right: 120px;
+    margin-left: 120px;
   }
-  .main-fitback__textarea {
+  .main-feetback__slogan {
+    @media @tablet-widths {
+      margin-top: 0;
+      text-align: center;
+      position: relative;
+      top: -13px;
+      background-color: #ffffff;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 27px;
+    }
+  }
+  .main-feetback__textarea {
     min-width: 280px;
     min-height: 160px;
     border: none;
     background: #f2f2f2;
     margin-bottom: 43px;
     padding: 20px 0;
+    @media @tablet-widths {
+      width: 100%;
+      padding-left: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
   }
 }
 
 .main-feetback__submit {
-  @media @tablet-widths{
+  @media @tablet-widths {
     order: 6;
     width: 100%;
-
+    position: relative;
+    margin: 0 60px;
+    @media @desktop-widths {
+      margin: 0 120px;
+    }
   }
-  .end-fitback {
+  .end-feetback {
     margin: 0 20px;
     padding: 20px;
     background-color: @blue;
     min-width: 280px;
     border: none;
     margin-bottom: 33px;
+    @media @tablet-widths {
+      margin: 0;
+    }
+
     &[value] {
       text-transform: uppercase;
       font-size: 18px;
       letter-spacing: 1.15px;
       color: #FFF;
+    }
+  }
+  .main-feetback-hint {
+    display: none;
+    @media @tablet-widths {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 }
