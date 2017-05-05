@@ -59,7 +59,6 @@
     .retina({ background: url(../img/bg-back-tablet@2x.jpg) no-repeat center/cover; });
     min-height: 520px;
 
-
   }
   @media @desktop-widths {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
@@ -91,8 +90,8 @@
       bottom: -2px;
     }
   }
-  .top-menu__photo{
-    @media @tablet-widths{
+  .top-menu__photo {
+    @media @tablet-widths {
       display: flex;
       justify-content: center;
     }
@@ -100,11 +99,11 @@
 }
 
 .top-menu__photo-text {
-margin-top: 90px;
+  margin-top: 90px;
   height: 208px;
   width: 280px;
   padding: 0 20px;
-  @media @tablet-widths{
+  @media @tablet-widths {
     height: 345px;
     width: 465px;
     padding: 0 153px;
@@ -115,78 +114,46 @@ margin-top: 90px;
 /*/main*/
 
 /*fitback*/ /*top-menu*/
-.feetback-header{
-  .top-menu__logo{
+.feetback-header {
+  .top-menu__logo {
 
   }
-  .top-menu__intro--feetback{
-    min-height:160px;
+  .top-menu__intro--feetback {
+    min-height: 160px;
     background-position: 50% 100%;
-    @media @tablet-widths{
+    @media @tablet-widths {
       min-height: 290px;
     }
-    }
-  .top-menu__photo-text{
+  }
+  .top-menu__photo-text {
 
-  margin-top: 0;
-    @media @tablet-widths{
+    margin-top: 0;
+    @media @tablet-widths {
       margin-top: -55px;
     }
   }
-  }
-
-
+}
 
 /*/fitback*/
 
 /*photo*/
 .photo-header {
-  /*top-menu*/
-  .top-menu__wrap {
-    position: relative;
-    background: #FFF;
-    z-index: 1;
-  }
-
   .top-menu__logo {
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    margin-bottom: -231px;
-    height: 56px;
-    z-index: 1;
-    a {
-      display: block;
-      width: 102px;
-      height: 83px;
-      margin: 0 auto;
+
+  }
+  .top-menu__intro--feetback {
+    min-height: 160px;
+    background-position: 50% 100%;
+    @media @tablet-widths {
+      min-height: 290px;
     }
   }
-  .top-menu__btn {
-    position: absolute;
-    top: 17px;
-    right: 20px;
-    display: block
-  }
-  .top-menu-fitback__intro {
-    background: url('../img/back-mobile.png') no-repeat;
-    min-height: 389px;
-    position: relative;
-    &:before {
-      content: " ";
-      position: absolute;
-      width: 100%;
-      height: 27px;
-      bottom: 0;
-      left: 0;
-      background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center/cover;
+  .top-menu__photo-text {
+
+    margin-top: 0;
+    @media @tablet-widths {
+      margin-top: -55px;
     }
-  }
-  .intro-fitback__photo-text {
-    background: url('../img/text-sedona.svg') no-repeat 24px 280px;
-    background-size: 230px 40px;
-    min-height: 389px;
-    margin: 0 20px;
   }
 }
 

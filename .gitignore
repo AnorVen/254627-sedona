@@ -6,6 +6,7 @@
 *.psd
 *.sublime
 *css/*.css
-node_modules/Thumbs.db
+node_modules/*
+*/**/Thumbs.db
 */sedona/*
-build/
+build/*
