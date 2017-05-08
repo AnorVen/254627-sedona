@@ -5,13 +5,14 @@
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
 <header class="site-header">
   <!--  mobile-menu--close - добавляется JS для скрытия меню -->
-  <nav class="mobile-menu">
+  <nav class="mobile-menu ">
     <div class="mobile-menu__wrap wrap">
-        <button class="mobile-menu__btn" type="button" id="mobile-menu__btn"></button>
+      <button class="mobile-menu__btn no_JS" type="button" id="mobile-menu__btn"></button>
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
         <li class="mobile-menu__item"><a href="photo.html">Фото и видео</a></li>
@@ -22,7 +23,7 @@
   </nav>
   <div class="top-menu">
     <div class="top-menu__wrap wrap">
-      <button class="top-menu__btn" type="button" id="top-menu__btn"></button>
+      <button class="top-menu__btn no_JS" type="button" id="top-menu__btn"></button>
       <div class="top-menu__logo">
         <a href="index.html">
           <picture>
@@ -37,7 +38,7 @@
     </div>
     <div class="top-menu__intro wrap">
       <div class="top-menu__photo">
-                  <svg class="top-menu__photo-text" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="350.074px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
+        <svg class="top-menu__photo-text" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="350.074px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
   <g>
     <path fill="#766458" d="M165.422,70.001l-0.203,0.229c-1.353,1.469-3.022,2.188-4.521,2.217l2.822-4.865 c1.813-3.139,0.144-6.104-2.679-6.104c-2.303,0-4.088,0.92-5.815,3.916l-1.468,2.562l-1.227,2.098l-0.154,0.177 c-2.159,2.506-4.262,4.491-5.586,4.491c-0.662,0-1.037-0.461-0.346-1.641l6.422-11.201h2.446l0.864-1.44h-2.477l2.822-4.893h-2.994 l-2.822,4.895h-2.707l-0.864,1.44h2.735l-6.019,10.423c-1.267,2.217-0.374,4.262,2.044,4.262c1.739,0,3.662-1.309,5.512-3.084 c-0.006,3.816,5.297,4.562,8.539,0.463h0.661c1.785,0,4.606-1.094,6.134-2.907C166.342,70.634,165.825,70.174,165.422,70.001z M159.03,70.204h-0.145c-0.979,0-1.756,0.806-1.756,1.785c0,0.373,0.115,0.72,0.289,1.009l-0.029,0.057 c-1.411,2.419-4.838,1.958-3.053-1.151l2.274-3.944l1.44-2.447c2.102-3.569,4.98-2.159,3.166,0.95L159.03,70.204z"/>
     <path fill="#766458" d="M206.877,70.001l-0.201,0.229c-2.16,2.506-4.924,4.491-7.025,4.491c-1.844,0-2.938-1.151-1.555-3.569 l0.287-0.52c1.93,0.807,5.558,0.432,7.804-3.455l0.432-0.749c1.612-2.764,0.058-4.837-2.39-4.837c-2.419,0-4.348,1.268-5.615,3.455 l-2.906,4.984l-0.173,0.199c-2.159,2.504-4.261,4.49-5.586,4.49c-0.661,0-1.036-0.461-0.346-1.641l4.319-7.571c1.295-2.274,0.059-3.916-1.612-3.916c-1.296,0-2.679,0.72-4.175,2.274l4.779-8.32h-2.994l-8.354,14.492l-0.168,0.191 c-2.159,2.506-4.261,4.491-5.586,4.491c-0.662,0-1.037-0.461-0.345-1.641l6.42-11.201h2.447l0.864-1.44h-2.476l2.822-4.893h-2.994 l-2.822,4.895h-2.706l-0.864,1.44h2.735l-6.019,10.423c-1.267,2.217-0.373,4.262,2.045,4.262c1.213,0,2.517-0.639,3.821-1.627 l-0.771,1.338h3.022l4.55-7.916c4.606-5.789,6.65-5.039,5.354-2.822l-3.888,6.767c-1.267,2.218-0.373,4.263,2.045,4.263 c1.781,0,3.757-1.375,5.646-3.217c0.145,1.864,1.653,3.217,4.055,3.217c3.396,0,6.766-2.649,9.242-5.529 C207.799,70.634,207.281,70.174,206.877,70.001z M201.176,65.797c1.729-2.965,4.781-2.477,2.996,0.634l-0.433,0.749 c-1.438,2.447-3.368,2.391-4.491,1.987L201.176,65.797z"/>
@@ -79,9 +80,9 @@
     <path fill="#FFFFFF" d="M353.439,336.523c0-0.294,0.057-0.588,0.168-0.88c0.113-0.294,0.283-0.559,0.508-0.795 c0.227-0.237,0.502-0.43,0.828-0.575c0.328-0.146,0.693-0.22,1.1-0.22c0.451,0,0.887,0.085,1.303,0.253 c0.418,0.17,0.771,0.412,1.064,0.729c0.25,0.293,0.441,0.644,0.576,1.048c0.135,0.406,0.203,0.834,0.203,1.286 c0,0.855-0.152,1.646-0.457,2.367s-0.738,1.364-1.303,1.928c-0.248,0.248-0.529,0.479-0.848,0.693 c-0.312,0.215-0.611,0.395-0.895,0.541c-0.281,0.146-0.523,0.266-0.729,0.355c-0.203,0.089-0.324,0.146-0.371,0.17l-1.354-1.996 c0.248-0.09,0.523-0.209,0.828-0.355c0.305-0.146,0.592-0.327,0.863-0.541c0.27-0.215,0.496-0.469,0.676-0.762 c0.182-0.293,0.283-0.631,0.305-1.014c-0.654,0-1.229-0.192-1.725-0.576C353.687,337.797,353.439,337.243,353.439,336.523z M345.572,336.523c0-0.294,0.057-0.588,0.17-0.88c0.113-0.294,0.281-0.559,0.506-0.795c0.227-0.237,0.504-0.43,0.83-0.575 c0.326-0.146,0.693-0.22,1.1-0.22c0.451,0,0.885,0.085,1.303,0.253c0.416,0.17,0.771,0.412,1.064,0.729 c0.248,0.293,0.439,0.644,0.574,1.048c0.137,0.406,0.203,0.834,0.203,1.286c0,0.855-0.152,1.646-0.457,2.367 c-0.303,0.722-0.738,1.364-1.301,1.928c-0.248,0.248-0.529,0.479-0.846,0.693c-0.318,0.214-0.615,0.395-0.896,0.541 c-0.281,0.146-0.523,0.266-0.729,0.355c-0.203,0.089-0.326,0.146-0.371,0.17l-1.355-1.996c0.25-0.09,0.525-0.209,0.83-0.355 c0.305-0.146,0.592-0.327,0.861-0.541c0.271-0.215,0.496-0.469,0.678-0.762c0.18-0.293,0.281-0.631,0.305-1.014 c-0.652,0-1.229-0.192-1.727-0.576C345.82,337.797,345.572,337.243,345.572,336.523z"/>
   </g>
 </svg>
-        </div>
       </div>
     </div>
+  </div>
 
 </header>
 <main class="main">
@@ -98,35 +99,36 @@
         <p class="features-main__text">Седона не аттракйион для туристов, там течет своя жизнь</p>
       </div>
       <div class="features-main__img pluse1__img">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./img/photo-city@1x.jpg">
-            <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg">
-            <source media="(min-width: 320px)" srcset="./img/photo-city-mobile@1x.jpg">
-            <img alt="фото города" src="./img/logo-sedona-mobile.svg">
-          </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/photo-city@1x.jpg">
+          <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg">
+          <source media="(min-width: 320px)" srcset="./img/photo-city-mobile@1x.jpg">
+          <img alt="фото города" src="./img/logo-sedona-mobile.svg">
+        </picture>
       </div>
       <section class="features__add">
+        <h2 class="visually-hidden">Дополнительные приемущества</h2>
         <div class="features__add-item">
-        <div class="features__add-icon features__add-icon--house"></div>
-        <div class="features__add-slogan">
-          <b class="features__add-title">Жилье</b>
-          <p class="features__add-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <div class="features__add-icon features__add-icon--house"></div>
+          <div class="features__add-slogan">
+            <b class="features__add-title">Жилье</b>
+            <p class="features__add-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
         </div>
+        <div class="features__add-item">
+          <div class="features__add-icon features__add-icon--gift"></div>
+          <div class="features__add-slogan">
+            <b class="features__add-title">Сувениры</b>
+            <p class="features__add-text">Не только китайского, но и местного производства!</p>
+          </div>
         </div>
-  <div class="features__add-item">
-        <div class="features__add-icon features__add-icon--gift"></div>
-        <div class="features__add-slogan">
-          <b class="features__add-title">Сувениры</b>
-          <p class="features__add-text">Не только китайского, но и местного производства!</p>
+        <div class="features__add-item">
+          <div class="features__add-icon features__add-icon--burger"></div>
+          <div class="features__add-slogan">
+            <b class="features__add-title">Еда</b>
+            <p class="features__add-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
         </div>
-  </div>
-  <div class="features__add-item">
-        <div class="features__add-icon features__add-icon--burger"></div>
-        <div class="features__add-slogan">
-          <b class="features__add-title">Еда</b>
-          <p class="features__add-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-  </div>
       </section>
     </section>
     <section class="main__item">
@@ -145,34 +147,34 @@
       </div>
     </section>
     <div class="features-more">
-    <section class="main__item">
+      <section class="main__item">
 
-      <div class=" pluse3">
-        <div class="pluse3__slogan">
-          <h3 class="features-more__title">Небольшая площадь</h3>
-          <p class="main__number">— №3 —</p>
-          <p class="features-more__text">ВСЕ достопримечательности находятся очень близко</p>
+        <div class=" pluse3">
+          <div class="pluse3__slogan">
+            <h3 class="features-more__title">Небольшая площадь</h3>
+            <p class="main__number">— №3 —</p>
+            <p class="features-more__text">ВСЕ достопримечательности находятся очень близко</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="main__item">
-      <div class=" pluse4">
-        <div class="pluse4__slogan">
-          <h3 class="features-more__title">Красивая дорога</h3>
-          <p class="main__number">— №4 —</p>
-          <p class="features-more__text">Ехать в Седону из лас-Вегаса совсем не скучно!</p>
+      </section>
+      <section class="main__item">
+        <div class=" pluse4">
+          <div class="pluse4__slogan">
+            <h3 class="features-more__title">Красивая дорога</h3>
+            <p class="main__number">— №4 —</p>
+            <p class="features-more__text">Ехать в Седону из лас-Вегаса совсем не скучно!</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="main__item">
-      <div class=" pluse5">
-        <div class="pluse5__slogan">
-          <h3 class="features-more__title">Мало туристов</h3>
-          <p class="main__number">— №5 —</p>
-          <p class="features-more__text">Большинство едет в гранд каньон и толпится там</p>
+      </section>
+      <section class="main__item">
+        <div class=" pluse5">
+          <div class="pluse5__slogan">
+            <h3 class="features-more__title">Мало туристов</h3>
+            <p class="main__number">— №5 —</p>
+            <p class="features-more__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
     <section class="main__item">
       <div class="hostel">
@@ -223,10 +225,15 @@
     </div>
     <div class="copy">
       <a href="#" class="copy__text">Разработано
-        <svg class="copy__icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        <svg class="copy__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+        </svg>
       </a>
     </div>
   </div>
+
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
